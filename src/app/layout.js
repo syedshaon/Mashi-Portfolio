@@ -1,9 +1,11 @@
-import { Inter } from "next/font/google";
+import { Figtree, Permanent_Marker } from "next/font/google";
+
 import "./globals.css";
 
 import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+export const figTree = Figtree({ subsets: ["latin"], display: "swap", weight: ["400"], variable: "--font-figtree" });
+export const pMarker = Permanent_Marker({ subsets: ["latin"], display: "swap", weight: ["400"], variable: "--font-permanent-marker" });
 // import Header from "@/components/Header";
 
 export const metadata = {
@@ -14,11 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-100 px-10`}>
-        <div className="mx-auto">
+      <body className={`bg-gray-100 px-10 ${figTree.variable} ${pMarker.variable}`}>
+        <main className="mx-auto figTeeFont">
           <Header />
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );
