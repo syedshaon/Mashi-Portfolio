@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Colors from https://visme.co/blog/website-color-schemes/ */
 
 /* Using imported Fonts */
 .figTeeFont {

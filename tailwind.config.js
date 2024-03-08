@@ -10,6 +10,13 @@ module.exports = {
       colors: {
         customPink: "rgb(243, 18, 96)",
       },
+      backgroundColor: {
+        dark: "#000",
+      },
+      textColor: {
+        dark: "#fff",
+      },
+      font: {},
     },
   },
 

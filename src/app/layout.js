@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`bg-gray-100 px-10 ${figTree.variable} ${pMarker.variable}`}>
         <main className="mx-auto figTeeFont">
-          <Header />
+          {/* <Header /> */}
           {children}
         </main>
       </body>
